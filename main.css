@@ -1,0 +1,49 @@
+* {
+  border-sizing: box-content;
+  margin: 0;
+  paddin: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+ul li {
+  border: 1px solid red;
+  width: 20%;
+  height: 120px;
+  text-align: center;
+  float: left;
+}
+ul li:first-child {
+  color: red;
+}
+ul li:nth-child(2) {
+  color: blue;
+}
+ul li:nth-child(3) {
+  color: green;
+}
+ul li:last-child {
+  color: brown;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  ul li {
+    width: 100%;
+    float: none;
+  }
+  .hide-responsive {
+    display: none;
+  }
+}
